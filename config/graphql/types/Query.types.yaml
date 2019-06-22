@@ -1,0 +1,22 @@
+Query:
+  type: object
+  config:
+    description: "Query Principal"
+    fields:
+      produto:
+        type: "Produto"
+        args:
+          id:
+            description: "Pega o produto pelo ID"
+            type: "Int!"
+        resolve: "@=resolver('Produto', [args])"
+      produtos_collection:
+        type: "ProdutoCollection"
+        args:
+          limit:
+            description: "Limite de produtos"
+            type: "Int!"
+          preco:
+            description: "Pega o produto pelo preco"
+            type: "Float"
+        resolve: "@=resolver('ProdutoLista', [args])"

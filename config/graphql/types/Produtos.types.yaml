@@ -1,0 +1,20 @@
+Produto:
+  type: object
+  config:
+    description: "Produto type"
+    fields:
+      id:
+        type: "Int"
+        description: "Produto ID"
+      nome:
+        type: "String"
+        description: "Produto Nome"
+      preco:
+        type: "Float"
+        description: "Produto Preço"
+      descricao:
+        type: "String"
+        description: "Produto Descrição"
+      slug:
+        type: "String"
+        description: "Produto Slug"
